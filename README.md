@@ -1,8 +1,8 @@
 # What is it?
 
 DoIt.vim provides the DoIt command, which just creates a buffer local mapping from a configurable key combo
-(in my case it's g\<CR\>) to the argument they are given, and then executes that mapping. It also creates a
-global mapping from the same key combo to ':DoWhat '
+(in my case it's g\<CR\>... use `g:do_it_mapping` to set yours) to the argument they are given, and then
+executes that mapping. It also creates a global mapping from the same key combo to ':DoWhat '
 
 Basically, you choose a key combo that you dont use for anything already and then the first time you use that
 combo in a particular buffer, you tell it what you want to map that combo to and then it creates that mapping
@@ -26,7 +26,7 @@ There are two ways to use it. Running this...
 
     :nnoremap <buffer> g<CR> :echom "hello"<CR>
 
-except with your value of g:do\_it\_mapping instead of g\<CR\>. You can also use regular key combos instead of
+except with your value of `g:do_it_mapping` instead of g\<CR\>. You can also use regular key combos instead of
 ex commands, so this...
 
   :DoWhat caphello<Esc>
