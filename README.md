@@ -36,5 +36,5 @@ ex commands, so this...
     :nnoremap <buffer> g<CR> caphello<Esc>
 
 Note that when binding to ex commands, you don't have to explicitly add '\<CR\>' to the end of the mapping.
-That way that you can just hit g\<CR\> and then type the command you want to execute as if you were doing it
-normally. From then on, hitting g\<CR\> will just repeat that command
+That way that you can just hit your configured key combo, type the command you want to execute as if you were
+doing it normally and from then on, that key combo will just repeat that command.
