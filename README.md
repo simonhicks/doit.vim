@@ -1,8 +1,14 @@
-# What is it?
+# TL;DR;
 
-DoIt.vim provides the DoIt command, which just creates a buffer local mapping from a configurable key combo
-(in my case it's g\<CR\>... use `g:do_it_mapping` to set yours) to the argument they are given, and then
-executes that mapping. It also creates a global mapping from the same key combo to ':DoWhat '
+First, configure a key combo by setting `g:do_it_mapping` in your vimrc. Then hit your configured key combo,
+invoke the command you want to execute as if you were doing it normally and from then on, that key combo will
+just repeat that command.
+
+# Say what...?
+
+DoIt.vim provides the DoIt command, which just creates a buffer local mapping from the configured key combo to
+the argument given, and then executes that mapping. It also creates a global mapping from the same key combo
+to ':DoWhat '
 
 Basically, you choose a key combo that you dont use for anything already and then the first time you use that
 combo in a particular buffer, you tell it what you want to map that combo to and then it creates that mapping
