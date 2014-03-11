@@ -24,16 +24,16 @@ There are two ways to use it. Running this...
 
 ...is equivalent to this...
 
-    :nnoremap \<buffer\> g\<CR\> :echom "hello"\<CR\>
+    :nnoremap <buffer> g<CR> :echom "hello"<CR>
 
 except with your value of g:do\_it\_mapping instead of g\<CR\>. You can also use regular key combos instead of
 ex commands, so this...
 
-  :DoWhat caphello\<Esc\>
+  :DoWhat caphello<Esc>
 
 ... is equivalent to this...
 
-    :nnoremap \<buffer\> g\<CR\> caphello\<Esc\>
+    :nnoremap <buffer> g<CR> caphello<Esc>
 
 Note that when binding to ex commands, you don't have to explicitly add '\<CR\>' to the end of the mapping.
 That way that you can just hit g\<CR\> and then type the command you want to execute as if you were doing it
